@@ -4,10 +4,7 @@ import "./globals.css";
 import Sidebar from "@/Components/sidebar";
 import { personalData } from "@/data/page-data";
 
-const inter = Inter({ 
-  subsets: ["latin"],
- 
-});
+
 
 
 
