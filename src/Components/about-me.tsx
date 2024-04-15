@@ -13,5 +13,5 @@ const id = useId();
 </section>
     );
 };
-
+ 
 export default AboutMe;
