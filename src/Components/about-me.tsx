@@ -2,8 +2,8 @@ import React, {useId} from "react";
 import Skills from "./skills";
 
 const AboutMe = ({data, skills}) => {
-const {title, body} = data;
-const id = useId()
+const { title, body} = data;
+const id = useId();
     return(
 <section>
     <h2 className="mb-8">{title}</h2>
