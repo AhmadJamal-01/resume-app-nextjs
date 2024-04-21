@@ -1,11 +1,11 @@
 import React from "react";
 
-const ProfessionaExperience = ({data}) => {
+const ProfessionaExperience = ({data}:any) => {
 const {title, experiences} = data;
     return ( <section>
 <h2 className="mb-6">{title}</h2>
 <div className="flex flex-col gap-6">
-{experiences.map(({role, description, current}) => (
+{experiences.map(({role, description, current}:any) => (
 
 <div key={role} className="flex flex-col rounded-lg ">
     <span className={`h-2 ${current ? "bg-green" : "bg-grey"}`} />

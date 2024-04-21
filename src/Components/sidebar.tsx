@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Envelope, Linkedin, Medium, Twitter } from "./icon";
 
-const Sidebar = ({ data }) => {
+const Sidebar = ({ data }:any) => {
   const { name, role, education, contactLinks } = data;
   return (
     <div className="bg-black flex flex-col h-auto sm:h-screen content-between  sm:justify-around sm:w-1/3 w-full sm:fixed ">

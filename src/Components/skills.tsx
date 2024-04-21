@@ -1,10 +1,10 @@
 'use client';
 import React, {useState} from "react";
 
-const Skills = ({data}) => {
+const Skills = ({data}:any) => {
 const [activeTab, setActiveTab] = useState('soft');
-const setBg = (active) => activeTab === active? 'bg-yellow' : 'bg-grey';
-const setTabsAllignment = (tab) => tab === 'soft'? 'text-left' : 'text-right';
+const setBg = (active:any) => activeTab === active? 'bg-yellow' : 'bg-grey';
+const setTabsAllignment = (tab:any) => tab === 'soft'? 'text-left' : 'text-right';
 const tabs = (<div className="flex">
 {['soft','hard'].map((el) =>(
 
@@ -15,7 +15,7 @@ const tabs = (<div className="flex">
 </div>)
 
 const content = (   <ul className={`flex flex-row flex-wrap content-start list-none py-4 gap-2 ${activeTab === 'soft' ? 'justify-start' : 'justify-end'}`}>
-{data[activeTab].map(({icon, text}) =>  ( <li key={text} className='skill'l>
+{data[activeTab].map(({icon, text}:any) =>  ( <li key={text} className='skill'>
         <span>{icon}</span>{text}
     
     </li>))}
